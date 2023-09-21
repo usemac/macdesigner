@@ -1,0 +1,980 @@
+{
+  "__class__": "MachineSIPMSM",
+  "__save_date__": "2023_09_20 13h30min53s ",
+  "__version__": "pyleecan_1.5.1",
+  "desc": "",
+  "frame": {
+    "Lfra": 0.35,
+    "Rext": 0.2,
+    "Rint": 0.2,
+    "__class__": "Frame",
+    "mat_type": {
+      "HT": {
+        "Cp": 1,
+        "__class__": "MatHT",
+        "alpha": 0,
+        "lambda_x": 1,
+        "lambda_y": 1,
+        "lambda_z": 1
+      },
+      "__class__": "Material",
+      "desc": "Material description",
+      "eco": {
+        "__class__": "MatEconomical",
+        "cost_unit": 0.127,
+        "unit_name": "$"
+      },
+      "elec": {
+        "__class__": "MatElectrical",
+        "alpha": 0,
+        "epsr": 1,
+        "rho": 0
+      },
+      "is_isotropic": false,
+      "mag": {
+        "BH_curve": {
+          "__class__": "ImportMatrix",
+          "is_transpose": false
+        },
+        "Brm20": 0,
+        "LossData": {
+          "__class__": "ImportMatrix",
+          "is_transpose": false
+        },
+        "ModelBH": {
+          "Bmax": 2.31,
+          "Hmax": null,
+          "__class__": "ModelBH",
+          "delta": 100
+        },
+        "Wlam": 0,
+        "__class__": "MatMagnetics",
+        "alpha_Br": 0,
+        "is_BH_extrapolate": false,
+        "mur_lin": 1
+      },
+      "name": "Material",
+      "path": "",
+      "struct": {
+        "Ex": 215000000000.0,
+        "Ey": 215000000000.0,
+        "Ez": 80000000000,
+        "Gxy": 0,
+        "Gxz": 2000000000,
+        "Gyz": 2000000000,
+        "__class__": "MatStructural",
+        "nu_xy": 0.3,
+        "nu_xz": 0.03,
+        "nu_yz": 0.03,
+        "rho": 7650
+      }
+    }
+  },
+  "logger_name": "Pyleecan.Machine",
+  "name": "SPM2",
+  "rotor": {
+    "Kf1": 0.95,
+    "L1": 0.11,
+    "Nrvd": 0,
+    "Rext": 0.055749999999999994,
+    "Rint": 0.0,
+    "Wrvd": 0,
+    "__class__": "LamSlotMag",
+    "axial_vent": [],
+    "bore": null,
+    "is_internal": true,
+    "is_stator": false,
+    "magnet": {
+      "Lmag": 0.95,
+      "Nseg": 1,
+      "__class__": "Magnet",
+      "mat_type": {
+        "HT": {
+          "Cp": 1,
+          "__class__": "MatHT",
+          "alpha": 0,
+          "lambda_x": 1,
+          "lambda_y": 1,
+          "lambda_z": 1
+        },
+        "__class__": "Material",
+        "desc": "Material description",
+        "eco": {
+          "__class__": "MatEconomical",
+          "cost_unit": 0.127,
+          "unit_name": "$"
+        },
+        "elec": {
+          "__class__": "MatElectrical",
+          "alpha": 0,
+          "epsr": 1,
+          "rho": 1.6e-06
+        },
+        "is_isotropic": false,
+        "mag": {
+          "BH_curve": {
+            "__class__": "ImportMatrix",
+            "is_transpose": false
+          },
+          "Brm20": 1.16,
+          "LossData": {
+            "__class__": "ImportMatrix",
+            "is_transpose": false
+          },
+          "ModelBH": {
+            "Bmax": 2.31,
+            "Hmax": null,
+            "__class__": "ModelBH",
+            "delta": 100
+          },
+          "Wlam": 0,
+          "__class__": "MatMagnetics",
+          "alpha_Br": -0.001,
+          "is_BH_extrapolate": false,
+          "mur_lin": 1.0
+        },
+        "name": "magnet",
+        "path": "",
+        "struct": {
+          "Ex": 215000000000.0,
+          "Ey": 215000000000.0,
+          "Ez": 80000000000,
+          "Gxy": 0,
+          "Gxz": 2000000000,
+          "Gyz": 2000000000,
+          "__class__": "MatStructural",
+          "nu_xy": 0.3,
+          "nu_xz": 0.03,
+          "nu_yz": 0.03,
+          "rho": 7500.0
+        }
+      },
+      "type_magnetization": 1
+    },
+    "mat_type": {
+      "HT": {
+        "Cp": 1,
+        "__class__": "MatHT",
+        "alpha": 0.00393,
+        "lambda_x": 1,
+        "lambda_y": 1,
+        "lambda_z": 1
+      },
+      "__class__": "Material",
+      "desc": "Lamination M800-50A",
+      "eco": {
+        "__class__": "MatEconomical",
+        "cost_unit": 0.127,
+        "unit_name": "$"
+      },
+      "elec": {
+        "__class__": "MatElectrical",
+        "alpha": 0,
+        "epsr": 1,
+        "rho": 2.3e-07
+      },
+      "is_isotropic": false,
+      "mag": {
+        "BH_curve": {
+          "__class__": "ImportMatrixVal",
+          "is_transpose": false,
+          "value": [
+            [
+              84.0,
+              0.1
+            ],
+            [
+              107.0,
+              0.2
+            ],
+            [
+              121.0,
+              0.3
+            ],
+            [
+              133.0,
+              0.4
+            ],
+            [
+              145.0,
+              0.5
+            ],
+            [
+              156.0,
+              0.6
+            ],
+            [
+              168.0,
+              0.7
+            ],
+            [
+              180.0,
+              0.8
+            ],
+            [
+              194.0,
+              0.9
+            ],
+            [
+              209.0,
+              1.0
+            ],
+            [
+              228.0,
+              1.1
+            ],
+            [
+              254.0,
+              1.2
+            ],
+            [
+              304.0,
+              1.3
+            ],
+            [
+              402.0,
+              1.4
+            ],
+            [
+              660.0,
+              1.5
+            ],
+            [
+              1480.0,
+              1.6
+            ],
+            [
+              3710.0,
+              1.7
+            ],
+            [
+              7300.0,
+              1.8
+            ]
+          ]
+        },
+        "Brm20": 0,
+        "LossData": {
+          "__class__": "ImportMatrixVal",
+          "is_transpose": false,
+          "value": [
+            [
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0
+            ],
+            [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8
+            ],
+            [
+              0.05,
+              0.18,
+              0.43,
+              0.7,
+              1.01,
+              1.35,
+              1.72,
+              2.13,
+              2.56,
+              3.05,
+              3.59,
+              4.2,
+              4.91,
+              5.7,
+              6.6,
+              7.54,
+              8.3,
+              8.83
+            ]
+          ]
+        },
+        "ModelBH": {
+          "Bmax": 2.31,
+          "Hmax": null,
+          "__class__": "ModelBH",
+          "delta": 100
+        },
+        "Wlam": 0.0005,
+        "__class__": "MatMagnetics",
+        "alpha_Br": 0,
+        "is_BH_extrapolate": false,
+        "mur_lin": 2500.0
+      },
+      "name": "M800-50A",
+      "path": "C:/Users/LAP10/Documents/Loss/pyleecan/pyleecan/Data/Material/M800-50A.json",
+      "struct": {
+        "Ex": 215000000000.0,
+        "Ey": 215000000000.0,
+        "Ez": 215000000000.0,
+        "Gxy": 0.0,
+        "Gxz": 2000000000.0,
+        "Gyz": 2000000000.0,
+        "__class__": "MatStructural",
+        "nu_xy": 0.3,
+        "nu_xz": 0.03,
+        "nu_yz": 0.03,
+        "rho": 7800.0
+      }
+    },
+    "notch": [],
+    "skew": null,
+    "slot": {
+      "H0": 0.0001,
+      "Hmag": 0.0055,
+      "Rtopm": 0.06124999999999999,
+      "W0": 1.0471975511965976,
+      "Wmag": 0.9948376736367678,
+      "Zs": 6,
+      "__class__": "SlotM14",
+      "is_bore": true,
+      "wedge_mat": null
+    },
+    "yoke": null
+  },
+  "shaft": {
+    "Drsh": 0.0,
+    "Lshaft": 1.2,
+    "__class__": "Shaft",
+    "mat_type": {
+      "HT": {
+        "Cp": 1,
+        "__class__": "MatHT",
+        "alpha": 0,
+        "lambda_x": 1,
+        "lambda_y": 1,
+        "lambda_z": 1
+      },
+      "__class__": "Material",
+      "desc": "Material description",
+      "eco": {
+        "__class__": "MatEconomical",
+        "cost_unit": 0.127,
+        "unit_name": "$"
+      },
+      "elec": {
+        "__class__": "MatElectrical",
+        "alpha": 0,
+        "epsr": 1,
+        "rho": 0
+      },
+      "is_isotropic": false,
+      "mag": {
+        "BH_curve": {
+          "__class__": "ImportMatrix",
+          "is_transpose": false
+        },
+        "Brm20": 0,
+        "LossData": {
+          "__class__": "ImportMatrix",
+          "is_transpose": false
+        },
+        "ModelBH": {
+          "Bmax": 2.31,
+          "Hmax": null,
+          "__class__": "ModelBH",
+          "delta": 100
+        },
+        "Wlam": 0,
+        "__class__": "MatMagnetics",
+        "alpha_Br": 0,
+        "is_BH_extrapolate": false,
+        "mur_lin": 1
+      },
+      "name": "Material",
+      "path": "",
+      "struct": {
+        "Ex": 215000000000.0,
+        "Ey": 215000000000.0,
+        "Ez": 80000000000,
+        "Gxy": 0,
+        "Gxz": 2000000000,
+        "Gyz": 2000000000,
+        "__class__": "MatStructural",
+        "nu_xy": 0.3,
+        "nu_xz": 0.03,
+        "nu_yz": 0.03,
+        "rho": 7650
+      }
+    }
+  },
+  "stator": {
+    "Kf1": 0.95,
+    "Ksfill": null,
+    "L1": 0.11,
+    "Nrvd": 0,
+    "Rext": 0.0875,
+    "Rint": 0.06224999999999999,
+    "Wrvd": 0,
+    "__class__": "LamSlotWind",
+    "axial_vent": [],
+    "bore": null,
+    "is_internal": false,
+    "is_stator": true,
+    "mat_type": {
+      "HT": {
+        "Cp": 1,
+        "__class__": "MatHT",
+        "alpha": 0.00393,
+        "lambda_x": 1,
+        "lambda_y": 1,
+        "lambda_z": 1
+      },
+      "__class__": "Material",
+      "desc": "Lamination M800-50A",
+      "eco": {
+        "__class__": "MatEconomical",
+        "cost_unit": 0.127,
+        "unit_name": "$"
+      },
+      "elec": {
+        "__class__": "MatElectrical",
+        "alpha": 0,
+        "epsr": 1,
+        "rho": 2.3e-07
+      },
+      "is_isotropic": false,
+      "mag": {
+        "BH_curve": {
+          "__class__": "ImportMatrixVal",
+          "is_transpose": false,
+          "value": [
+            [
+              84.0,
+              0.1
+            ],
+            [
+              107.0,
+              0.2
+            ],
+            [
+              121.0,
+              0.3
+            ],
+            [
+              133.0,
+              0.4
+            ],
+            [
+              145.0,
+              0.5
+            ],
+            [
+              156.0,
+              0.6
+            ],
+            [
+              168.0,
+              0.7
+            ],
+            [
+              180.0,
+              0.8
+            ],
+            [
+              194.0,
+              0.9
+            ],
+            [
+              209.0,
+              1.0
+            ],
+            [
+              228.0,
+              1.1
+            ],
+            [
+              254.0,
+              1.2
+            ],
+            [
+              304.0,
+              1.3
+            ],
+            [
+              402.0,
+              1.4
+            ],
+            [
+              660.0,
+              1.5
+            ],
+            [
+              1480.0,
+              1.6
+            ],
+            [
+              3710.0,
+              1.7
+            ],
+            [
+              7300.0,
+              1.8
+            ]
+          ]
+        },
+        "Brm20": 0,
+        "LossData": {
+          "__class__": "ImportMatrixVal",
+          "is_transpose": false,
+          "value": [
+            [
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0,
+              50.0
+            ],
+            [
+              0.1,
+              0.2,
+              0.3,
+              0.4,
+              0.5,
+              0.6,
+              0.7,
+              0.8,
+              0.9,
+              1.0,
+              1.1,
+              1.2,
+              1.3,
+              1.4,
+              1.5,
+              1.6,
+              1.7,
+              1.8
+            ],
+            [
+              0.05,
+              0.18,
+              0.43,
+              0.7,
+              1.01,
+              1.35,
+              1.72,
+              2.13,
+              2.56,
+              3.05,
+              3.59,
+              4.2,
+              4.91,
+              5.7,
+              6.6,
+              7.54,
+              8.3,
+              8.83
+            ]
+          ]
+        },
+        "ModelBH": {
+          "Bmax": 2.31,
+          "Hmax": null,
+          "__class__": "ModelBH",
+          "delta": 100
+        },
+        "Wlam": 0.0005,
+        "__class__": "MatMagnetics",
+        "alpha_Br": 0,
+        "is_BH_extrapolate": false,
+        "mur_lin": 2500.0
+      },
+      "name": "M800-50A",
+      "path": "C:/Users/LAP10/Documents/Loss/pyleecan/pyleecan/Data/Material/M800-50A.json",
+      "struct": {
+        "Ex": 215000000000.0,
+        "Ey": 215000000000.0,
+        "Ez": 215000000000.0,
+        "Gxy": 0.0,
+        "Gxz": 2000000000.0,
+        "Gyz": 2000000000.0,
+        "__class__": "MatStructural",
+        "nu_xy": 0.3,
+        "nu_xz": 0.03,
+        "nu_yz": 0.03,
+        "rho": 7800.0
+      }
+    },
+    "notch": [],
+    "skew": null,
+    "slot": {
+      "H0": 0.00038360739489869784,
+      "H1": 0.00015344295795947913,
+      "H1_is_rad": false,
+      "H2": 0.007672147897973956,
+      "R1": 0.0015338336412025722,
+      "W0": 0.0024596160107455134,
+      "W1": 0.005465813357212252,
+      "W2": 0.006135334564810289,
+      "Zs": 36,
+      "__class__": "SlotW11",
+      "is_bore": true,
+      "wedge_mat": null
+    },
+    "winding": {
+      "Lewout": 0.127910525684894,
+      "Nlayer": 1,
+      "Npcp": 1,
+      "Nslot_shift_wind": 0,
+      "Ntcoil": 20.0,
+      "__class__": "Winding",
+      "coil_pitch": 6,
+      "conductor": {
+        "Kwoh": 0.5,
+        "Nwppc": 1,
+        "Wins_cond": 0.015,
+        "Wins_wire": 1e-06,
+        "Wwire": 0.001106307616535102,
+        "__class__": "CondType12",
+        "cond_mat": {
+          "HT": {
+            "Cp": 381.0,
+            "__class__": "MatHT",
+            "alpha": 1.6e-05,
+            "lambda_x": 385.0,
+            "lambda_y": 385.0,
+            "lambda_z": 385.0
+          },
+          "__class__": "Material",
+          "desc": "COPPER WINDING",
+          "eco": {
+            "__class__": "MatEconomical",
+            "cost_unit": 60.0,
+            "unit_name": "$"
+          },
+          "elec": {
+            "__class__": "MatElectrical",
+            "alpha": 0.00393,
+            "epsr": 1,
+            "rho": 1.73e-08
+          },
+          "is_isotropic": true,
+          "mag": null,
+          "name": "Copper1",
+          "path": null,
+          "struct": {
+            "Ex": 115000000000.0,
+            "Ey": 115000000000.0,
+            "Ez": 115000000000.0,
+            "Gxy": null,
+            "Gxz": null,
+            "Gyz": null,
+            "__class__": "MatStructural",
+            "nu_xy": null,
+            "nu_xz": null,
+            "nu_yz": null,
+            "rho": 8900.0
+          }
+        },
+        "ins_mat": {
+          "HT": {
+            "Cp": 1,
+            "__class__": "MatHT",
+            "alpha": 0,
+            "lambda_x": 1,
+            "lambda_y": 1,
+            "lambda_z": 1
+          },
+          "__class__": "Material",
+          "desc": "Material description",
+          "eco": {
+            "__class__": "MatEconomical",
+            "cost_unit": 0.127,
+            "unit_name": "$"
+          },
+          "elec": {
+            "__class__": "MatElectrical",
+            "alpha": 0,
+            "epsr": 1,
+            "rho": 0
+          },
+          "is_isotropic": false,
+          "mag": {
+            "BH_curve": {
+              "__class__": "ImportMatrix",
+              "is_transpose": false
+            },
+            "Brm20": 0,
+            "LossData": {
+              "__class__": "ImportMatrix",
+              "is_transpose": false
+            },
+            "ModelBH": {
+              "Bmax": 2.31,
+              "Hmax": null,
+              "__class__": "ModelBH",
+              "delta": 100
+            },
+            "Wlam": 0,
+            "__class__": "MatMagnetics",
+            "alpha_Br": 0,
+            "is_BH_extrapolate": false,
+            "mur_lin": 1
+          },
+          "name": "Material",
+          "path": "",
+          "struct": {
+            "Ex": 215000000000.0,
+            "Ey": 215000000000.0,
+            "Ez": 80000000000,
+            "Gxy": 0,
+            "Gxz": 2000000000,
+            "Gyz": 2000000000,
+            "__class__": "MatStructural",
+            "nu_xy": 0.3,
+            "nu_xz": 0.03,
+            "nu_yz": 0.03,
+            "rho": 7650
+          }
+        }
+      },
+      "dual_tri_phase_shift": null,
+      "end_winding": {
+        "Lew_enforced": 0,
+        "__class__": "EndWinding"
+      },
+      "is_aper_a": true,
+      "is_change_layer": false,
+      "is_permute_B_C": false,
+      "is_reverse_layer": false,
+      "is_reverse_wind": false,
+      "is_wye": true,
+      "p": 3,
+      "per_a": 6,
+      "qs": 3,
+      "type_connection": 0,
+      "wind_mat": [
+        [
+          [
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              0.0,
+              -20.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              0.0,
+              20.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              -20.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              0.0,
+              20.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ],
+            [
+              0.0,
+              -20.0,
+              0.0
+            ]
+          ]
+        ]
+      ]
+    },
+    "yoke": null
+  },
+  "type_machine": 1
+}

@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: volumen_diametro
+- file: plano_x_b
+- file: pyleecan_build
+- file: fem_simulation
+
