@@ -6,9 +6,7 @@ import matplotlib.pyplot as plt
 # Load the machine
 import os
 from os.path import join
-from pydae import plot_tools
 import scipy.optimize as sopt
-colors = plot_tools.set_style(plt)
 import json
 
 
